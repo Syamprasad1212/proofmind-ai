@@ -22,5 +22,6 @@ frontend/.vite/
 .env
 backend/.env
 frontend/.env
-*.local
-*.log
+# Tools and scratch binaries
+tools/
+test_public_deployment.py

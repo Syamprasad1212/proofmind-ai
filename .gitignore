@@ -1,0 +1,26 @@
+# proofmind-ai .gitignore
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/**/*.pyc
+backend/.pytest_cache/
+backend/**/.pytest_cache/
+backend/storage/
+backend/data/
+backend/chroma_db/
+*.sqlite3
+*.db
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment and sensitive files
+.env
+backend/.env
+frontend/.env
+*.local
+*.log

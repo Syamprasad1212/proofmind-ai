@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+venv/
+.env
+storage/proofmind.db
+storage/chroma_db/
+storage/*.pdf

@@ -16,12 +16,14 @@ services:
       - key: CORS_ORIGINS
         value: "*"
       - key: STORAGE_DIR
-        value: "/var/data/storage"
-    disk:
-      name: proofmind-storage
-      mountPath: /var/data/storage
-      sizeGB: 1
+        value: "./storage"
     healthCheckPath: /health
+    # Note: On Render Free tier, local storage is ephemeral between service restarts.
+    # To add persistent disk (requires Render Starter plan), uncomment below:
+    # disk:
+    #   name: proofmind-storage
+    #   mountPath: /var/data/storage
+    #   sizeGB: 1
 
   # 2. ProofMind AI - React Vite Frontend Static Site
   - type: web

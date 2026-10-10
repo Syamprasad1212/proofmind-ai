@@ -1,3 +1,13 @@
+---
+title: ProofMind AI
+emoji: 🧠
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # ProofMind AI — Evidence-Aware AI Decision Engine
 
 > **Tagline:** *Every decision needs evidence.*
